@@ -1,0 +1,80 @@
+:root {
+  --cor-fundo: #f5f7fa;
+  --cor-primaria: #004aad;
+  --cor-texto: #222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--cor-primaria);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background: #003b8a;
+  text-align: center;
+  padding: 10px;
+}
+
+nav button {
+  background: white;
+  color: var(--cor-primaria);
+  border: none;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #ddd;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--cor-primaria);
+}
+
+footer {
+  text-align: center;
+  background: var(--cor-primaria);
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Modo de alto contraste */
+.alto-contraste {
+  background: #000 !important;
+  color: #ffffff !important;
+}
+
+.alto-contraste header,
+.alto-contraste nav,
+.alto-contraste footer {
+  background: #000 !important;
+  color: #ffffff !important;
+}
